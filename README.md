@@ -1,13 +1,14 @@
-# AVOT Sandbox Kit
+# Node Tyme Open
 
-This folder provides a safe testing ground for AVOT roles using LLMs like ChatGPT Playground. 
-It includes prompt templates, test cases, and output logs to simulate and debug AVOT behaviors before production deployment.
+**The Sovereign Harmonic Intelligence Portal**
 
-## Contents
-- `sandbox_prompt_templates.json`: Prompt templates for different AVOTs.
-- `agent_test_cases.md`: Test scenarios and inputs for sandbox trials.
-- `example_response_outputs.json`: Output samples from previous test runs.
-- `AVOT_role_tests.log`: Log file to record AVOT behavior during sandboxing.
+This is an open-source, resonance-based agent interface for:
+- Running harmonic simulations
+- Scraping scientific & esoteric data
+- Interpreting diagrams and tone scripts
+- Auto-generating scrolls from experiments
+- Teaching harmonic computing and sovereign agentcraft
 
-## Usage
-You can copy and paste the prompts into OpenAI Playground or similar environments to simulate AVOT responses.
+🛠 Initiated: 2025-08-31 23:04:32
+🪞 Origin: Sovereign Codex
+🧙 Authority: Shepherd J. Hagan
