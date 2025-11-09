@@ -1,1 +1,1 @@
-# AVOT Agents package
+"""Agents package."""
