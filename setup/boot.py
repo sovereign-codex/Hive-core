@@ -1,6 +1,6 @@
 import os
 import subprocess
-from datetime import datetime
+from datetime import UTC, datetime
 
 
 def banner(msg):
@@ -9,7 +9,7 @@ def banner(msg):
 
 def boot_sequence():
     banner("🧠 Hive-Core Boot Sequence Initiated")
-    print(f"UTC Time: {datetime.utcnow().isoformat()}Z")
+    print(f"UTC Time: {datetime.now(UTC).isoformat()}Z")
 
     agents = [
         "agents/avot_archivist.py",
