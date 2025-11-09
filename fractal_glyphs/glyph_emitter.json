@@ -1,9 +1,0 @@
-{
-  "emitter": "GlyphSeed",
-  "pattern": "fractal",
-  "parameters": {
-    "coherence_index": 0.98,
-    "style": "living",
-    "color_map": "plasma"
-  }
-}

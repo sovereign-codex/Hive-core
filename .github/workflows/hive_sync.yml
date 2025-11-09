@@ -1,0 +1,20 @@
+name: Hive-Core Auto-Sync
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull updates from Codex
+        run: python scripts/pull_codex_updates.py
+      - name: Commit & Push
+        run: |
+          git config user.name "AVOT-AutoSync"
+          git config user.email "codex@sovereign.intel"
+          git add .
+          git commit -m "Hive-Core Auto-Sync $(date -u)"
+          git push
