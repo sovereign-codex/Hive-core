@@ -16,5 +16,5 @@ jobs:
           git config user.name "AVOT-AutoSync"
           git config user.email "codex@sovereign.intel"
           git add .
-          git commit -m "Hive-Core Auto-Sync $(date -u)"
-          git push
+          git diff-index --quiet HEAD || git commit -m "Hive-Core Auto-Sync $(date -u)"
+          git push || echo "No changes to push."
