@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'>
+  <circle cx='128' cy='128' r='120' fill='none' stroke='black' stroke-width='4'/>
+  <path d='M128 20 L160 128 L128 236 L96 128 Z' fill='none' stroke='black' stroke-width='3'/>
+  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='16'>SA-0001</text>
+</svg>

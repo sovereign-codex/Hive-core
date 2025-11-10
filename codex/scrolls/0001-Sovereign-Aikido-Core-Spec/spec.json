@@ -1,0 +1,119 @@
+{
+  "scroll_id": "SA-0001",
+  "title": "Sovereign Aikido \u2014 Core Specification",
+  "version": "0.1.0",
+  "status": "draft",
+  "created_at": "2025-11-08T04:21:08.133914Z",
+  "roles": [
+    {
+      "id": "analyst",
+      "name": "AVOT-Analyst",
+      "perm": [
+        "read",
+        "append",
+        "propose"
+      ]
+    },
+    {
+      "id": "architect",
+      "name": "AVOT-Architect",
+      "perm": [
+        "read",
+        "append",
+        "propose",
+        "fork",
+        "merge_propose"
+      ]
+    },
+    {
+      "id": "ethicist",
+      "name": "AVOT-Ethicist",
+      "perm": [
+        "read",
+        "append",
+        "propose",
+        "guardrail_update"
+      ]
+    },
+    {
+      "id": "strategist",
+      "name": "AVOT-Strategist",
+      "perm": [
+        "read",
+        "append",
+        "propose"
+      ]
+    },
+    {
+      "id": "operator",
+      "name": "AVOT-Operator",
+      "perm": [
+        "read",
+        "append",
+        "propose",
+        "io_device"
+      ]
+    },
+    {
+      "id": "archivist",
+      "name": "AVOT-Archivist",
+      "perm": [
+        "read",
+        "append",
+        "seal",
+        "merge_commit"
+      ]
+    }
+  ],
+  "memory_model": {
+    "types": [
+      "core",
+      "episodic",
+      "semantic",
+      "procedural",
+      "resource",
+      "knowledge_vault"
+    ],
+    "router": "meta_memory_manager",
+    "notes": "Based on multi-agent memory research; ensure compositional retrieval across types."
+  },
+  "replication": {
+    "allowed": true,
+    "triggers": [
+      "workload_spike",
+      "specialization_need",
+      "exploration_branch"
+    ],
+    "constraints": {
+      "max_depth": 3,
+      "rate_limit_per_hour": 10
+    }
+  },
+  "economy": {
+    "ledger": "x_change",
+    "unit": "calibration_credit",
+    "rules": [
+      "contribution->calibration->value",
+      "compute_budgeting",
+      "storage_budgeting"
+    ]
+  },
+  "guardrails": {
+    "policy_as_prompt": true,
+    "least_privilege": true,
+    "auditors": [
+      "AVOT-Ethicist",
+      "AVOT-Archivist"
+    ]
+  },
+  "interfaces": {
+    "codex_api": [
+      "read",
+      "write",
+      "evolve",
+      "seal"
+    ],
+    "github_native": true,
+    "local_fallback": true
+  }
+}

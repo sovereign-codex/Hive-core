@@ -1,0 +1,28 @@
+{
+  "core": {
+    "store": "codex/core.jsonl",
+    "embedding": "text-embedding",
+    "retention_days": 3650
+  },
+  "episodic": {
+    "store": "codex/episodic.jsonl",
+    "index": "timeline",
+    "retention_days": 3650
+  },
+  "semantic": {
+    "store": "codex/semantic.kg.json",
+    "graph": "entities-relations"
+  },
+  "procedural": {
+    "store": "codex/procedural.recipes.json",
+    "runner": "toolexec"
+  },
+  "resource": {
+    "store": "codex/resources.index.json",
+    "files_dir": "assets/"
+  },
+  "knowledge_vault": {
+    "store": "codex/vault.sealed.json",
+    "integrity": "sha256+sig"
+  }
+}
